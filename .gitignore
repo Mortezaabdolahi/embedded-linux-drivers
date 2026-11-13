@@ -1,0 +1,170 @@
+# =====================================================================
+#  .gitignore  -  Raspberry Pi Embedded Linux (C) + STM32 Firmware
+# =====================================================================
+#  NOTE: Source files (*.c / *.h) are NEVER ignored in this repo.
+#  NOTE: Executables built WITHOUT an extension (e.g. eth_init) cannot be
+#        matched by a pattern, so they must be listed by exact name.
+#        Add one line per binary at the bottom of this file.
+# =====================================================================
+
+# ------------------------- Compiled objects --------------------------
+*.o
+*.a
+*.so
+*.so.*
+*.lo
+*.la
+*.dylib
+*.elf
+*.axf
+*.bin
+*.hex
+*.map
+*.out
+*.lst
+*.srec
+*.obj
+*.ko
+*.mod
+*.mod.c
+*.symvers
+*.cmd
+*.d
+
+# ------------------------- Build output dirs -------------------------
+build/
+output/
+out/
+build
+output
+out
+Debug/
+Release/
+CM0/
+CM3/
+CM4/
+CM7/
+Core/Debug/
+Core/Release/
+Drivers/Debug/
+Drivers/Release/
+Objects/
+Listings/
+MDK-ARM/
+[Dd]ebug/
+[Rr]elease/
+[Dd]ebug*/
+[Rr]elease*/
+__debug_bin*
+dist/
+install/
+
+# ------------------------- CMake artifacts ---------------------------
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+cmake_uninstall.cmake
+CTestTestfile.cmake
+compile_commands.json
+Makefile
+CMakeScripts/
+cmake-build-*/
+CPackConfig.cmake
+CPackSourceConfig.cmake
+_internal/
+CMakeUserPresets.json
+
+# ------------------------ Autotools artifacts ------------------------
+autom4te.cache/
+config.log
+config.status
+config.cache
+libtool
+stamp-h1
+.deps/
+.dirstamp
+
+# ------------------------- Editor / IDE ------------------------------
+.vscode/
+.idea/
+.vscode
+.idea
+.vs/
+.settings/
+.metadata/
+*.code-workspace
+*.swp
+*.swo
+*.swn
+*~
+*.orig
+*.rej
+*.bak
+*.autosave
+tags
+TAGS
+cscope.*
+.cproject
+.project
+.mxproject
+*.launch
+*.ioc.bak
+*.uvguix.*
+*.uvoptx
+*.uvprojx
+*.uvgui.*
+*.suo
+*.user
+
+# ------------------------- OS metadata -------------------------------
+.DS_Store
+._*
+.Spotlight-V100/
+.Trashes/
+fseventsd/
+Thumbs.db
+ehthumbs.db
+desktop.ini
+Desktop.ini
+$RECYCLE.BIN/
+
+# ------------------------- Logs --------------------------------------
+*.log
+logs/
+
+# ------------------------- Python cache ------------------------------
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyd
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.pyo
+*.egg
+.installed.cfg
+
+# ------------------------- Temp files --------------------------------
+*.tmp
+*.temp
+*.swp
+*.pid
+*.seed
+*.lock
+*.core
+core
+core.[0-9]*
+*.trace
+# ----------------------- Local / secrets -----------------------------
+.env
+.env.*
+
+# =====================================================================
+#  Extensionless executables - list each one by EXACT name below.
+#  Example:
+#  eth_init
+# =====================================================================
