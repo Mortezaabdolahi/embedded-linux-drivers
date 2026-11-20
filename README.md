@@ -12,7 +12,9 @@ embedded-linux-drivers-practice/
 ├── 02-spi-drivers/         # SPI hardware bring-up & ILI9341 display tests using libgpiod
 ├── 03-uart-thread-drivers/ # Multi-threaded POSIX UART communication (termios, pthreads)
 ├── 04-pwm-drivers/         # Linux sysfs PWM hardware control interface
-└── 05-networking/          # Network socket programming (TCP client/server & raw ioctl setup)
+├── 05-networking/          # Network socket programming (TCP client/server & raw ioctl setup)
+└── 06-can-drivers/         # SocketCAN drivers and testing utility for industrial communication
+        
 ```
 
 ---
@@ -41,6 +43,12 @@ embedded-linux-drivers-practice/
    - TCP client and server implementations using POSIX sockets.
    - Low-level network interface configuration using Linux `ioctl`, including `SIOCSIFHWADDR`.
 
+6. **CAN Bus (`06-can-drivers/`)**
+   - SocketCAN implementation using `libnl` for bitrate configuration.
+   - Raw CAN socket handling for frame transmission and reception.
+   - Error handling and interface bring-up using Linux netlink/ioctl.
+
+
 ---
 
 ## 🧰 Technologies
@@ -48,6 +56,7 @@ embedded-linux-drivers-practice/
 - Embedded Linux (Buildroot, Raspberry Pi 4)
 - POSIX C, Linux System Programming
 - pthreads, termios, Sockets, ioctl, sysfs, libgpiod, i2c-dev, spidev
+- Communication Protocols: I2C, SPI, UART, PWM, CAN Bus (SocketCAN)
 
 ---
 
